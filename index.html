@@ -10,7 +10,47 @@
 </head>
 <body>
 
-<script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+  <header>
+    <h1>Crystal Collector</h1>
+  </header>
+
+  <div class="scoreboard">
+
+    <div class="">
+      <h3>Target Score</h3>
+      <div class="targetScore">
+      </div>
+    </div>
+    <div class="winLoss">
+      <h4 style="margin-bottom: 40px; margin-top:20px;">Wins:</h4>
+      <h4>Losses:</h4>
+    </div>
+    <div class="">
+      <h3 style="margin-left:6px;">User Score</h3>
+      <div class="userScore">
+      </div>
+    </div>
+  </div>
+  <div class='container' id="buttons">
+
+  </div>
+
+
+  <div class="instructionsContainer">
+    <h2 style="padding-bottom: 10px;">Instructions</h2>
+    <ul>
+      <li>You will be given a random number at the start of the game.</li>
+      <li>There are four crystals above. By clicking on a crystal you will add a specific amount of points to your target score.</li>
+      <li>You win the game by matching your total score to the randomized number. You lose the game if your user score goes above the target score.</li>
+      <li>The value of each crystal is hidden and randomized from you until you click on it.</li>
+      <li style="text-align:center; font-size:26px; padding-top: 20px;">Good Luck!</li>
+    </ul>
+    <div class="startGameContainer">
+      <button type="button" name="button" class="start">Start Game</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
