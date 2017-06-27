@@ -41,6 +41,9 @@ h4{
   border: 1px solid #a7d8de;
   height: 100px;
   width: 100px;
+  font-size: 65px;
+  text-align: center;
+  color: white;
 }
 
 .winsLoss{
@@ -51,13 +54,16 @@ h4{
   border: 1px solid #a7d8de;
   height: 100px;
   width: 100px;
+  font-size: 65px;
+  text-align: center;
+  color: white;
 }
 
 .container{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 50px 0 50px 0;
+  padding: 25px 0 25px 0;
 }
 
 .crystal-button{
@@ -65,7 +71,11 @@ h4{
   background-repeat: no-repeat;
   height:100px;
   width:82px;
-
+  margin: 0px 10px 0px 10px;
+}
+/* removes blue outline on button when clicked*/
+button:focus {
+  outline: 0;
 }
 
 /*#buttons{
