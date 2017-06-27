@@ -4,10 +4,8 @@ $(document).ready(function() {
   var wins = 0;
   var loss = 0;
 
-
   //creating an array that holds the four random numbers that will be used in each crystal and assigning it to a variable
   function generateArray() {
-
     var numbersArray = [];
 
     while(numbersArray.length < 4) {
@@ -17,6 +15,7 @@ $(document).ready(function() {
     }
     return numbersArray
   }
+
   var numbers = generateArray();
   console.log(numbers)
 
@@ -31,8 +30,10 @@ $(document).ready(function() {
     }
     return crystalBtn
   }
+
   var crystals = generateBtns();
   // console.log(crystals)
+
 
   // generating the target score in a function and assigning it to a variable.
   function generateScore(min, max) {
@@ -65,11 +66,13 @@ $(document).ready(function() {
     if (targetNumber === userNumber) {
       wins++
       console.log(wins)
+      $('#winColumn').text(wins)
       setGame();
     }
     else if (targetNumber < userNumber){
       loss++
       console.log(loss)
+      $('#lossColumn').text(loss)
       setGame();
     }
   }
