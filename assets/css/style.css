@@ -2,10 +2,10 @@ body{
   background-image: url("../images/escheresque_ste.png");
 }
 
-header{
+.jumbotron {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  color: white !important;
+  background-color: transparent !important;
 }
 
 h1{
@@ -17,53 +17,38 @@ h2{
   font-size: 28px;
   color: #68a0b0;
 }
+
 h3{
-  color: #68a0b0;
+  color: #50C878 !important;
 }
 
 h4{
-  color: #a7d8de;
+  color: #a7d8de !important;
 }
 
-.scoreboard{
-  width: 600px;
-  height: 125px;
+.col, .col-sm {
+  text-align: center;
+}
+
+.container {
   background-color: rgba(234,235,230,.2);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   margin: 0 auto;
   padding: 10px;
-  border: 2px solid #a7d8de;
+  border: 2px solid  #9966cc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
-.targetScore{
-  border: 1px solid #a7d8de;
+#buttons {
+  margin-top: 20px;
+}
+
+.targetScore, .userScore{
+  border: 1px solid #50C878;
   height: 100px;
   width: 100px;
   font-size: 65px;
   text-align: center;
   color: white;
-}
-
-.winsLoss{
-
-}
-
-.userScore{
-  border: 1px solid #a7d8de;
-  height: 100px;
-  width: 100px;
-  font-size: 65px;
-  text-align: center;
-  color: white;
-}
-
-.container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 25px 0 25px 0;
 }
 
 .crystal-button{
@@ -78,18 +63,10 @@ button:focus {
   outline: 0;
 }
 
-/*#buttons{
-  background-color: rgba(225, 225, 225, .2);
-  width: 100px;
-  height: 100px;
-}*/
-
-.instructionsContainer{
-  /*border: 1px solid white;*/
-}
-
 .instructionsContainer h2{
   text-align: center;
+  color: #fff;
+  margin: 20px 0px;
 }
 
 .instructionsContainer ul{
@@ -145,4 +122,8 @@ button:focus {
 #start:active {
 	position:relative;
 	top:1px;
+}
+
+.effect8{
+     box-shadow: 0 10px 6px -6px #777;
 }
