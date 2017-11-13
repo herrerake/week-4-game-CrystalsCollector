@@ -32,6 +32,7 @@ h4{
 
 .container {
   background-color: rgba(234,235,230,.2);
+  width: 80% !important;
   margin: 0 auto;
   padding: 10px;
   border: 2px solid  #9966cc;
@@ -42,7 +43,7 @@ h4{
   margin-top: 20px;
 }
 
-.targetScore, .userScore{
+.targetScore, .userScore {
   border: 1px solid #50C878;
   height: 100px;
   width: 100px;
@@ -51,12 +52,16 @@ h4{
   color: white;
 }
 
-.crystal-button{
+.crystal-button {
   background-image: url("../images/crystal1.jpg");
   background-repeat: no-repeat;
   height: 100px;
   width: 80px;
   margin: 0px 10px 0px 10px;
+}
+
+.row {
+  justify-content: center;
 }
 
 
@@ -65,13 +70,13 @@ button:focus {
   outline: 0;
 }
 
-.instructionsContainer h2{
+.instructionsContainer h2 {
   text-align: center;
   color: #fff;
   margin: 20px 0px;
 }
 
-.instructionsContainer ol{
+.instructionsContainer ol {
   padding: 0 20% 50px 20%;
   line-height: 1.5em;
   height: auto;
@@ -120,7 +125,7 @@ button:focus {
   top:1px;
 }
 
-.effect8{
+.effect8 {
   box-shadow: 0 10px 6px -6px #777;
 }
 
@@ -136,6 +141,7 @@ button:focus {
   .row {
     justify-content: center;
   }
+  
   .crystalColumn {
     width: auto !important;
     height: 20px;
@@ -153,10 +159,17 @@ button:focus {
   #two {
     background-color: blue;
   }
+  
   #three {
     background-color: red;
   }
+  
   #four {
     background-color: yellow;
   }
+  
+}
+
+@media screen and (max-width: 480px) {
+  
 }

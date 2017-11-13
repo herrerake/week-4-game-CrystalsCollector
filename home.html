@@ -17,7 +17,7 @@
   </div >
 
   <div class="container effect8">
-    <div class="row">
+    <div class="row .col-4">
       <div class="col">
         <h3>Target Score</h3>
         <div class="targetScore col"></div>
@@ -33,24 +33,24 @@
     </div>
 
     <div class="container" id="buttons">
-      <div class="row">
-        <div class="col-sm crystalColumn">
+      <div class="row .col-3">
+        <div class="crystalColumn">
           <button class="crystal-button" id="one"></button>
         </div>
-        <div class="col-sm crystalColumn">
+        <div class="crystalColumn">
           <button class="crystal-button" id="two"></button>
         </div>
-        <div class="col-sm crystalColumn">
+        <div class="crystalColumn">
           <button class="crystal-button" id="three"></button>
         </div>
-        <div class="col-sm crystalColumn">
+        <div class="crystalColumn">
           <button class="crystal-button" id="four"></button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="Container instructionsContainer">
+  <!-- <div class="Container instructionsContainer"> /*modal hide fade*/
     <h2>Instructions</h2>
     <div class="row">
       <ol>
@@ -58,9 +58,33 @@
         <li>There are four crystals above. By clicking on a crystal you will add a specific amount of points to your target score.</li>
         <li>You win the game by matching your user score to the target score. You lose the game if your user score goes above the target score.</li>
         <li>The value of each crystal is hidden and randomized from you until you click on it.</li>
-        <li style="text-align:center; font-size:26px; padding-top: 20px;"><button type="button" name="button" id="start">Start Game</button></li>
-      </ul>
+        <li style="text-align:center; font-size:26px; padding-top: 20px;"><button data-dismiss="modal" type="button" name="button" id="start">Start Game</button></li>
+      </ol>
       <div class="startGameContainer">
+        <a class="close" data-dismiss="modal"></a>
+      </div>
+    </div>
+  </div> -->
+  <div class="modal fade">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Instructions</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>You will be given a random number at the start of the game.</li>
+            <li>There are four crystals above. By clicking on a crystal you will add a specific amount of points to your target score.</li>
+            <li>You win the game by matching your user score to the target score. You lose the game if your user score goes above the target score.</li>
+            <li>The value of each crystal is hidden and randomized from you until you click on it.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="button" data-dismiss="modal">START GAME</button>
+        </div>
       </div>
     </div>
   </div>
