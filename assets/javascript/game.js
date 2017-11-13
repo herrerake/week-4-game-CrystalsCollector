@@ -141,6 +141,7 @@ $(document).ready(function() {
 
   $('#start').on('click', function(e) {
     $('.modal').removeClass('show').addClass('hide');
-    startGame();
   });
+  // start game after modal disapears 
+  startGame();
 });
