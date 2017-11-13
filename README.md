@@ -1,2 +1,5 @@
-# week-4-game-CrystalsCollector
-GW bootcamp jquery hw
+# Crystals Collector
+Homework assignment for the GW coding book camp.
+
+This game was built on html css, with bootsrap, and javascript.
+
