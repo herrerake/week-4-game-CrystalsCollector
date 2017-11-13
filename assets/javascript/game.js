@@ -118,11 +118,6 @@ $(document).ready(function() {
     console.log("your score: " + userNumber);
   };
 
-  // Start Game
-  // $("#start").click(function(e){
-  //   startGame();
-  // });
-
   $("#one").click(function() {
     addValues(crystal.oneCrystal);
   });
@@ -138,14 +133,14 @@ $(document).ready(function() {
   $("#four").click(function() {
     addValues(crystal.fourCrystal);
   });
-  
+
   // ON LOAD MODAL
   $(window).on('load', function() {
     $('.modal').modal('show');
   });
-  
+
   $('#start').on('click', function(e) {
     $('.modal').removeClass('show').addClass('hide');
+    startGame();
   });
-  startGame();
 });
